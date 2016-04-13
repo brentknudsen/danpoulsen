@@ -1,0 +1,133 @@
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {-webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+	background: #fff6e3;
+	width: auto;
+}
+
+/*-- HEADER --*/
+
+.headerwrapper {
+	background: #fff6e3;
+	margin: 45px 0 45px 0;
+	padding: 10px 0 10px 0;
+}
+h1 {
+	font-size: 2em;
+	color: #7f7b72;
+	font-family: 'Stardos Stencil', cursive;
+	text-align: center;
+
+}
+
+li {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*-- LOGIN FORMATTING --*/
+
+fieldset {
+	margin: 0 5%;
+	border: 2px solid #ccb379;
+	border-radius: 5px;
+	padding: 10px;
+	
+}
+
+input {
+	width: 50%;
+}
+
+.button {
+	background-color: rgba(204, 179, 121, 0.9);
+	border-radius: 5px;
+}
+label {
+	color: #7f704b;
+	padding: 10px 0 10px 0;
+	font-family: 'Roboto', sans-serif;
+}
+.city, .state {
+
+	width: 16.66%;	
+	
+}
+.zip {
+	width: 12%;
+}
+/*-- LOG OUT FORMATTING --*/
+.logout-button .button {
+	text-align: center;
+	background: orange;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 10px;
+	margin: 10px 5% 10px 5%;
+	padding: 5px;
+	width: 25%;
+}
+.logout-button {
+	text-align: center;
+}
+
+/*-- MAIN CONTENT --*/
+
+p {
+	margin-left: 5%;
+	font-family: 'Roboto', sans-serif;
+	color: #7f704b;
+}
+
+h3 {
+	color: #7f704b;
+	padding: 10px 0 10px 5%;
+	font-family: 'Roboto', sans-serif;
+	
+}
+.content-wrapper {
+	margin: 50px 0;
+	padding: 50px 0;
+	background: #ffdf97;
+}
+
+/*-- TABLE FORMATTING --*/
+table, th, td {
+    border: 2px solid #7f704b;
+    border-radius: 5px;
+    /*--border-collapse: collapse;--*/
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Roboto', sans-serif;
+    color: #7f704b;
+    background: #fff;
+}
+th, td {
+    padding: 5px;
+    border: 2px solid #7f704b;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/*-- FOOTER --*/
+footer {
+	margin: 50px 0;
+	padding: 50px 0;
+}
+
+footer p {
+	
+	
+	font-size: 1em;
+	color: #7f7b72;
+	font-family: 'Stardos Stencil', cursive;
+	text-align: center;
+
+}
+
+.clearfix {
+	clear: both;
+}
