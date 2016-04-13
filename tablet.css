@@ -1,0 +1,62 @@
+@media only screen and (min-width: 481px){
+
+#navWrapper {
+	background: #000000;
+	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7f704b), color-stop(100%,#ccb379));/*---2nd Color is dark tan---*/
+	background: -webkit-linear-gradient(top, #7f704b 0%,#ccb379 100%); /*Safari, Chrome*/
+	background: -o-linear-gradient(top, #7f704b 0%,#ccb379 100%); /*Opera on Windows*/
+	background: linear-gradient(to bottom, #7f704b 0%,#ccb379 100%);
+}
+nav ul {
+	margin-left: 2%;
+}
+
+/*---Main Menu Items Float Side by Side---*/
+nav ul li {
+	float: left;
+	border-right: 1.5px solid rgba(0,0,0,0.6);
+	border-left: 1.5px solid rgba(255,255,255,0.6);
+}
+nav ul li a {
+	display: block;
+	background: rgba(127, 112, 75, 0.7);
+	color: rgba(255, 246, 227, 0.8);/*--Light Tan--*/
+	font-family: 'Stardos Stencil', cursive;
+	font-size: .9em;
+	padding: 1.3em 1em;
+	text-decoration: none;
+}
+nav ul li a:hover {
+	background: rgba(127, 112, 75, 0.7);
+	color: rgb(255, 255, 255);
+}
+
+nav ul li ul { /*---Rules for the Sub-Menu Items---*/
+	z-index: 99;
+	position: absolute;
+	background-color: #7f704b; /*---Earth Dark Brown---*/
+	left: -999em; /*---Pushes the Menu Way Off to the Side---*/
+	width: 10em;
+}
+
+nav ul li ul li { /*---Overrides the Float and Line from the Parent ul---*/
+	float: none;
+	border-right: none;
+	border-bottom: 1.5px solid rgba(0,0,0,0.6);
+}
+nav li:hover ul { /*---This Displays the Menus as Drop-Downs---*/
+	left: auto;
+	margin-left: 0; /*---Aligns Directly Below the Main Menu Item---*/
+}
+nav li.current {
+	background-color: #7f704b; /*---Earth Dark Brown---*/
+}
+
+
+
+
+
+
+
+}
